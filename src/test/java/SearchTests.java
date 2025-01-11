@@ -12,13 +12,9 @@ public class SearchTests {
     }
     @Test
     void successfulSearchTest1() {
-        open("https://ya.ru/");
         open("https://www.google.com/");
         $x("//textarea[@name='q']").setValue("selenide").pressEnter();
         $x("//div[@id='search']").shouldHave(text("https://ru.selenide.org"));
-    }
-    private static String getMessage() {
-        return "selenide1111";
     }
     @Test
     void successfulSearchTest2() {
