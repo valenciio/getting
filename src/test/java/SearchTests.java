@@ -16,6 +16,9 @@ public class SearchTests {
         $x("//textarea[@name='q']").setValue("selenide").pressEnter();
         $x("//div[@id='search']").shouldHave(text("https://ru.selenide.org"));
     }
+    private static String getMessage() {
+        return "selenide";
+    }
     @Test
     void successfulSearchTest2() {
         open("https://www.google.com/");
