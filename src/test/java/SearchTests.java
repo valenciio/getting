@@ -13,7 +13,7 @@ public class SearchTests {
     @Test
     void successfulSearchTest1() {
         open("https://www.google.com/");
-        $x("//textarea[@name='q']").setValue("selenide").pressEnter();
+        $x("//textarea[@name='q']").setValue("selenide1111").pressEnter();
         $x("//div[@id='search']").shouldHave(text("https://ru.selenide.org"));
     }
     @Test
